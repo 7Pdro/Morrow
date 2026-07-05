@@ -1,0 +1,342 @@
+body {margin: 0;}
+
+@font-face {
+    font-family: '42dot sans';
+    src: url(42dotsans-bold.ttf)
+}
+
+@font-face {
+    font-family: slopdogz;
+    src: url(Slopdogz_PERSONAL_USE_ONLY.otf);
+}
+
+@font-face {
+    font-family: 'Druk Wide Bold Bold';
+    src: local('Druk Wide Bold Bold'), url('DrukWideBold.woff') format('woff');
+    }
+
+
+.daddy {
+    filter: brightness(0.5);
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 7vh 93vh;
+    overflow: hidden;        
+}
+
+#home {
+font-weight: 700;
+font-style: Bold;
+text-decoration: underline;
+}
+
+.logo {
+    position: absolute;
+    left: -1vh; 
+    top: 3.5%;
+    transform: translateY(-25%); 
+    height: 13vh; 
+    width: auto; 
+}
+
+.hub {
+    display: grid;
+    grid-template-columns: repeat(6, max-content);
+    justify-content: end;
+    align-items: center;
+    grid-gap: 40px;
+    width: 100%;
+    height: 7vh;
+    background-color: #382521;
+    padding-right: 1.3vh;
+    box-sizing: border-box;
+    background-image: url(Group\ 36.png);
+    background-size: cover;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.caixa-pesquisa {
+    display: flex;
+    align-items: center;
+}
+
+.pesquisa {
+    background-color: #D9D9D9; 
+    border: none;
+    border-radius: 50px;
+    padding: 6px 35px 6px 15px; 
+    width: 225px;
+    height: 39px;
+    outline: none;
+    color: #382521;
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="%23382521" class="bi bi-search" viewBox="0 0 17 17"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 13px center; 
+    font-size: 18px;
+}
+
+.hubpage {
+text-decoration: none;
+color: #B79C91;
+z-index: 2; }
+
+
+.hubit {
+display: inline-block;
+font-family: Inter;
+font-weight: 400;
+font-size: 19px;
+line-height: 100%;
+justify-content: end;
+z-index: 2;
+}
+
+.caixa-trans {
+    background-color: #9e9e9e; 
+    border: none;
+    border-radius: 50px;
+    padding: 6px 35px 6px 15px; 
+    width: 545px;
+    height: 39px;
+    position: absolute;
+    right: 27vh;
+    opacity: 0.3;
+    z-index: 1;
+}
+
+.baixo {
+    display: grid;
+    grid-template-columns: auto 1fr; 
+    padding: 4vh; 
+    column-gap: 40px; 
+    align-items: start; 
+    width: 100%;
+    height: 93vh;
+    background-color: #B79C91; 
+    box-sizing: border-box; 
+}
+
+.filtro {
+    width: 320px;
+    background-color: #6C4D46;
+    border-radius: 22px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 100%;
+    row-gap: 20px;
+    position: sticky;
+    top: 20px;
+}
+
+.filtro-seção {
+    background-color: #88625A;
+    border-radius: 2px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.seção-cima {
+    font-family: 'Bebas Neue', sans-serif;
+    color: #FFFFFF;
+    font-size: 20px;
+    text-transform: uppercase;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center; 
+}
+
+.seção-cima h2 {
+    margin: 0;
+    font-weight: 400;
+}
+
+.seção-itens {
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: 100%;
+    row-gap: 10px; 
+}
+
+.item {
+    font-family: 'Bebas Neue', sans-serif;
+    color: #FFFFFF;
+    font-size: 19px;
+    text-transform: uppercase;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 12px; 
+    align-items: center;
+    font-weight: 300;
+}
+
+.item input {
+    width: 30px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.seção-cima span {
+    font-size: 30px;
+}
+
+.grade-produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 30px; 
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    scrollbar-color: #3C1F19 #d9d9d970;
+    overflow: hidden;
+}
+
+.produto {
+    background-color: #D6C2B8; 
+    border: 5px solid #7D665D; 
+    width: 310px; 
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 100%;
+    row-gap: 12px; 
+    padding-bottom: 12px; 
+}
+
+.produto-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-bottom: 1px solid #7D665D; 
+}
+
+.produto-nome {
+    font-family: "Roboto", sans-serif;
+    color: #382521;
+    font-size: 20px;
+    margin: 0;
+    padding: 0 12px; 
+    text-transform: uppercase;
+}
+
+.produto-detalhes {
+    padding: 0 15px;
+    display: grid;
+    grid-template-columns: 1fr 30px;
+    align-items: center; 
+}
+
+.preço {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    align-items: baseline; 
+}
+
+.preço-esquerda {
+    font-family: 'Roboto', sans-serif;
+    color: #382521;
+    font-style: bold;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.preço-parcela {
+    font-family: 'Roboto', sans-serif;
+    color: #61463E;
+    font-size: 14px;
+    margin-left: -35px;
+}
+
+.carrinho {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: #382521;
+    justify-content: center;
+}
+
+.icone-carrinho {
+    width: 23px;
+    height: auto;
+}
+
+.tudo {position: absolute;
+    z-index: 1000;
+    height: 100vh;
+width: 25%;
+background-color: #C4F5CD;
+top:0;
+right:0;}
+
+.carrinho-cima {display: flex;
+height: 80px;
+width: auto;
+background-color:#3C1F19;
+align-items: center;
+}
+
+h4 {
+    font-family: 'Druk Wide Bold Bold';
+    color: #fff;
+    font-size: 24px;
+    margin-left: 20px;
+}
+
+.sair {text-decoration: none;
+color: white;
+font-family: 'inter';
+font-weight: 600;
+font-size: 40px;
+margin-left: 16vh}
+
+.carrinho-meio {display: flex;
+    height: 76vh;
+    width: auto;
+    background-color:#C4F5CD;
+    align-items: center;
+    bottom: 0px;}
+
+
+.carrinho-baixo {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;      
+    align-content: center;      
+    row-gap: 15px;             
+    height: 179px;
+    width: auto;
+    background-color: #96C49E;
+    border-top: solid 2px #083528;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+h3 {
+    font-family: 'inter';
+    font-weight: 700;
+    font-size: 37px;
+    margin: 0;                 
+    color: #083528;
+}
+
+.comprar {
+    width: 100%;             
+    height: 76px;
+    border-radius: 13px;
+    background-color: #36563C;
+    border: none;
+    cursor: pointer;
+    display: grid;
+    place-items: center;       
+}
+
+.comprar h4 {
+    margin: 0;    
+    font-size: 26px;
+    text-align: center;
+    font-weight: 300;
+}
